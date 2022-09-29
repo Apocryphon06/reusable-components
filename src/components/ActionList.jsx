@@ -5,7 +5,6 @@ import {
   Description,
   InsertDriveFile,
   LocalAtmRounded,
-  NoteAddOutlined,
   Settings,
   YouTube,
 } from "@material-ui/icons";

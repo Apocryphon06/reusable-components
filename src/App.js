@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <span></span>
-      <span style={{ display: "inline-block" }}>
+      <span style={{ display: "inline-block",margin:'10px' }}>
         <ActionList />
       </span>
       <span style={{ display: "inline-block" }}>
