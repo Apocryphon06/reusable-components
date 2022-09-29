@@ -1,4 +1,3 @@
-import { Button } from "@material-ui/core";
 import {
   AddAlert,
   AssignmentTurnedIn,
@@ -14,6 +13,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+  display: flex;
   margin: 10px;
 `;
 const List = styled.ul`
@@ -88,21 +88,6 @@ const ActionList = () => {
         </List>
       </ListWrapper>
       <br />
-      <Button
-        style={{
-          marginLeft: "15px",
-          textTransform: "none",
-          borderRadius: "20px",
-          padding: "10px 50px",
-          color: "#0077b5",
-          borderColor: "#0077b5",
-          fontSize: "14px",
-          fontWeight: "bold",
-        }}
-        variant="outlined"
-      >
-        <NoteAddOutlined /> Post a free job
-      </Button>
     </Container>
   );
 };
