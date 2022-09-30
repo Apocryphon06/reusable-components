@@ -27,6 +27,7 @@ const ListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
+  
 `;
 
 const ListWrapper = styled.div`
@@ -36,6 +37,7 @@ const ListWrapper = styled.div`
   border: 1px solid #dfdfdf;
   border-radius: 10px;
   background-color: white;
+  
 `;
 
 const ActionList = () => {

@@ -48,11 +48,17 @@ const MediaAttachments = styled.div`
 
 const InfoItem = styled.div`
   font-size: 14px;
+  padding: 5px;
   font-weight: bold;
   color: #808080;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
+  &:hover{
+    background-color: #dfdfdf;
+  }
 `;
 
 const Post = () => {

@@ -58,6 +58,15 @@ const InfoItem = styled.li`
   font-weight: bold;
 `;
 
+const ItemWrapper = styled.div`
+  padding: 5px;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #dfdfdf;
+  }
+`;
+
 const Divider = styled.hr`
   background-color: #dfdfdf;
   height: 1px;
@@ -69,28 +78,31 @@ const Recents = () => {
     <Container>
       <Wrapper>
         <Heading>
-          Recent job searches &nbsp;&nbsp;&nbsp;&nbsp;<Clear onClick={()=>{alert('Are you sure?')}}>Clear</Clear>
+          Recent job searches &nbsp;&nbsp;&nbsp;&nbsp;
+          <Clear
+            onClick={() => {
+              alert("Are you sure?");
+            }}
+          >
+            Clear
+          </Clear>
         </Heading>
         <List>
-          <ListItem>
-            react developer jobs.&nbsp;&nbsp;{" "}
-            <span style={{ color: "green", fontSize: "12px" }}>63 new</span>{" "}
-          </ListItem>
-          <InfoItem>Alert On. India. Entry level. Remote</InfoItem>
+          <ItemWrapper>
+            <ListItem>
+              react developer jobs.&nbsp;&nbsp;{" "}
+              <span style={{ color: "green", fontSize: "12px" }}>63 new</span>{" "}
+            </ListItem>
+            <InfoItem>Alert On. India. Entry level. Remote</InfoItem>
+          </ItemWrapper>
           <Divider />
-
-          <ListItem>
-            react developer jobs.&nbsp;&nbsp;{" "}
-            <span style={{ color: "green", fontSize: "12px" }}>63 new</span>{" "}
-          </ListItem>
-          <InfoItem>Alert On. India. Entry level. Remote</InfoItem>
-          <Divider />
-
-          <ListItem>
-            hr.&nbsp;&nbsp;{" "}
-            <span style={{ color: "green", fontSize: "12px" }}>1,613 new</span>{" "}
-          </ListItem>
-          <InfoItem>Alert On. India. Entry level. Remote</InfoItem>
+          <ItemWrapper>
+            <ListItem>
+              react developer jobs.&nbsp;&nbsp;{" "}
+              <span style={{ color: "green", fontSize: "12px" }}>129 new</span>{" "}
+            </ListItem>
+            <InfoItem>Alert On. India. Entry level. Remote</InfoItem>
+          </ItemWrapper>
           <Divider />
         </List>
       </Wrapper>
