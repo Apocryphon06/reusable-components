@@ -2,7 +2,6 @@ import {
   AccountCircle,
   CalendarToday,
   Image,
-  Info,
   NoteAdd,
   YouTube,
 } from "@material-ui/icons";
