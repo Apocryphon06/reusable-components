@@ -3,6 +3,7 @@ import ActionList from "./components/ActionList";
 import Post from "./components/Post";
 import Recents from "./components/Recents";
 import Feed from "./components/Feed";
+import News from "./components/News";
 
 const App = () => {
   const temp = () => {
@@ -21,9 +22,7 @@ const App = () => {
       </>
     );
   };
-  return (
-    <Feed/>
-  );
+  return <News />;
 };
 
 export default App;
