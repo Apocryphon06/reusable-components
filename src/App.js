@@ -4,6 +4,7 @@ import Post from "./components/Post";
 import Recents from "./components/Recents";
 import Feed from "./components/Feed";
 import News from "./components/News";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const temp = () => {
@@ -22,7 +23,7 @@ const App = () => {
       </>
     );
   };
-  return <News />;
+  return <Navbar />;
 };
 
 export default App;

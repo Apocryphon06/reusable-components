@@ -52,7 +52,7 @@ const News = () => {
       <Wrapper>
         <Head>
           <HeaderText>LinkedIn News</HeaderText>
-          <Info />
+          <Info style={{cursor:'pointer'}} />
         </Head>
         <ListWrapper>
           <ul>
