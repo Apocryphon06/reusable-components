@@ -1,14 +1,26 @@
-import { LinkedIn, Search } from "@material-ui/icons";
+import { Typography } from "@material-ui/core";
+import {
+  AccountCircle,
+  Apps,
+  Home,
+  LinkedIn,
+  Message,
+  NotificationsActive,
+  People,
+  Search,
+  Work,
+} from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
   margin-top: 5px;
-  margin-left: 100px;
+  padding-left: 100px;
   display: flex;
   flex-direction: row;
   justify-content: ;
   align-items: center;
+  background-color: white;
 `;
 
 const Brand = styled.div`
@@ -24,6 +36,7 @@ const SearchContainer = styled.div`
   padding: 5px;
   border-radius: 5px;
   width: 250px;
+  margin-right: 200px;
 `;
 
 const SearchInput = styled.input`
@@ -35,6 +48,32 @@ const SearchInput = styled.input`
   padding: 4px;
 `;
 
+const NavbarItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+`;
+
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2em;
+  margin-right: 20px;
+  cursor: pointer;
+`;
+
+const ItemText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+`;
 const Navbar = () => {
   return (
     <Container>
@@ -44,6 +83,48 @@ const Navbar = () => {
       <SearchContainer>
         <Search /> <SearchInput placeholder="Search" />
       </SearchContainer>
+      <NavbarItems>
+        <ItemWrapper>
+          <Home style={{ width: "25px", height: "25px" }} />
+          <ItemText>Home</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <People style={{ width: "25px", height: "25px" }} />
+          <ItemText>My Network</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <Work style={{ width: "25px", height: "25px" }} />
+          <ItemText>Jobs</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <Message style={{ width: "25px", height: "25px" }} />
+          <ItemText>Message</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <NotificationsActive style={{ width: "25px", height: "25px" }} />
+          <ItemText>Notifications</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <AccountCircle style={{ width: "25px", height: "25px" }} />
+          <ItemText>Me</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <Apps style={{ width: "25px", height: "25px" }} />
+          <ItemText>Work</ItemText>
+        </ItemWrapper>
+        <ItemWrapper>
+          <Typography
+            style={{
+              fontSize: "12px",
+              color: "#EAC117",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            Get hired faster,<br></br> Try Premium <br></br> Free.
+          </Typography>
+        </ItemWrapper>
+      </NavbarItems>
     </Container>
   );
 };
