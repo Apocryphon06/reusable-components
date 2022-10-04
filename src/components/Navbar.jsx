@@ -98,7 +98,7 @@ const Navbar = () => {
           <ItemText>Jobs</ItemText>
         </ItemWrapper>
         <ItemWrapper>
-          <Badge badgeContent={3} color="secondary">
+          <Badge badgeContent={100} color="secondary">
             <Message style={{ width: "25px", height: "25px" }} />
           </Badge>
 
