@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Badge, Typography } from "@material-ui/core";
 import {
   AccountCircle,
   Apps,
@@ -57,6 +57,7 @@ const NavbarItems = styled.div`
 `;
 
 const ItemWrapper = styled.div`
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,11 +98,16 @@ const Navbar = () => {
           <ItemText>Jobs</ItemText>
         </ItemWrapper>
         <ItemWrapper>
-          <Message style={{ width: "25px", height: "25px" }} />
+          <Badge badgeContent={3} color="secondary">
+            <Message style={{ width: "25px", height: "25px" }} />
+          </Badge>
+
           <ItemText>Message</ItemText>
         </ItemWrapper>
         <ItemWrapper>
-          <NotificationsActive style={{ width: "25px", height: "25px" }} />
+          <Badge badgeContent={6} color="primary">
+            <NotificationsActive style={{ width: "25px", height: "25px" }} />
+          </Badge>
           <ItemText>Notifications</ItemText>
         </ItemWrapper>
         <ItemWrapper>
