@@ -23,7 +23,12 @@ const App = () => {
       </>
     );
   };
-  return <Navbar />;
+  return (
+    <>
+      <Navbar />
+      <Feed />
+    </>
+  );
 };
 
 export default App;

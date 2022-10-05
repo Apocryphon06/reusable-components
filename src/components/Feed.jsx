@@ -12,6 +12,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   margin: 20px;
+  backgrond-color: white;
 `;
 
 const Wrapper = styled.div`
@@ -20,7 +21,6 @@ const Wrapper = styled.div`
   padding: 10px;
   border: 1px solid #dfdfdf;
   border-radius: 5px;
-  backgrond-color: white;
 `;
 
 const ProfileWrapper = styled.div`
